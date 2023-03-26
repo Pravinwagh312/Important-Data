@@ -1,0 +1,48 @@
+1)Install Node.js: Angular requires Node.js to be installed on your system. You can install it by running the following command in your terminal:
+
+sudo apt install nodejs
+
+2)Install Angular CLI: Angular CLI is a command-line interface tool that helps with Angular development. 
+You can install it globally using npm, the package manager for Node.js, by running the following command:
+
+sudo npm install -g @angular/cli
+
+3)Clone the repository: Clone the repository containing the Angular project that you want to set up. 
+You can do this using the git clone command followed by the URL of the repository.
+git clone <repository-url>
+
+
+4)Navigate to the project directory: Navigate to the directory containing the cloned project.
+cd <project-directory>
+
+5)Install project dependencies: Install the project dependencies by running the following command:
+npm install
+
+6)Serve the Angular app: After installing the project dependencies, you can serve the Angular app by running the following command:
+ng serve
+
+This will start a local development server and serve your Angular app. You can access it by opening your web browser and navigating to http://localhost:4200
+
+=================================================================
+
+FROM node:14-alpine AS builder
+
+WORKDIR /app
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+RUN npm run build --prod
+
+FROM nginx:1.21-alpine
+
+COPY --from=builder /app/dist/dashboard /usr/share/nginx/html
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
+
+
