@@ -1,0 +1,38 @@
+name: Convert data to JSON
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  convert:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python environment
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+
+      - name: Install dependencies
+        run: pip install pandas
+
+      - name: Convert data to JSON
+        run: python convert_data.py
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v4.1.1
+        with:
+          commit_message: "Convert data to JSON"
+          branch: ${{ github.ref }}
+          commit_options: '--author="Your Name <youremail@example.com>"'
+          files: |
+            E:/Kpit data transform/*.json
+
+      - name: Push changes to GitHub
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
