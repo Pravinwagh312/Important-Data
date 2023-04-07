@@ -1,0 +1,13 @@
+Check your current Docker Compose version by running the following command in your terminal:
+docker-compose --version
+
+Remove your current Docker Compose installation by running the following command:
+sudo rm /usr/local/bin/docker-compose
+
+
+Download the latest version of Docker Compose by running the following command:
+sudo curl -L "https://github.com/docker/compose/releases/download/2.17.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+Make the downloaded file executable by running the following command:
+sudo chmod +x /usr/local/bin/docker-compose
+
