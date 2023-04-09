@@ -1,1 +1,13 @@
-sudo docker exec -it my-kafka /bin/bash
+ls
+cd kafka.   #where docker-compose.yml file exist
+sudo docker-compose up  #execute command from directory where kafka cluster docker-compose file exist
+
+#After running kafka cluster(containers) open new terminal
+sudo docker ps
+sudo docker exec -it my-kafka /bin/bash  #this command will open inside container directories
+root@1d082587822e:/# ls
+root@1d082587822e:/# cd opt
+root@1d082587822e:/opt# cd kafka
+root@1d082587822e:/opt/kafka# cd bin
+
+
