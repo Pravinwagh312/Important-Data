@@ -24,7 +24,7 @@ root@1d082587822e:/opt/kafka/bin# ./kafka-topics.sh --list -bootstrap-server 172
 
 
 ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic my-topic --from-beginning
-./kafka-console-consumer.sh --bootstrap-server 172.21.0.4::9092 --topic my-topic --from-beginning
+./kafka-console-consumer.sh --bootstrap-server 172.21.0.4:9092 --topic my-topic --from-beginning
 
 
 
