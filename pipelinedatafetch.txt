@@ -1,0 +1,10 @@
+response = requests.get('https://api.github.com/repos/Pravinwagh312/Git-Runner/commits')
+
+In addition to commits, there are many other types of data that can be fetched from a GitHub repository using the GitHub API. Here are a few examples:
+
+Pull requests: A pull request is a way to propose changes to a repository. You can use the GitHub API to fetch information about pull requests, such as their status, author, and review status.
+Issues: An issue is a way to track bugs, feature requests, and other tasks related to a repository. You can use the GitHub API to fetch information about issues, such as their status, author, and assignee.
+Releases: A release is a way to package and distribute a specific version of a repository. You can use the GitHub API to fetch information about releases, such as their version number, release date, and assets.
+Branches: A branch is a way to work on a feature or bugfix separate from the main codebase. You can use the GitHub API to fetch information about branches, such as their name, author, and commit history.
+Contributors: A contributor is someone who has made a contribution to a repository, such as by submitting code, writing documentation, or reporting a bug. You can use the GitHub API to fetch information about contributors, such as their username, email, and contributions.
+These are just a few examples of the types of data that can be fetched from a GitHub repository using the GitHub API. The exact API endpoints and data formats will depend on the specific resource you're trying to fetch.
