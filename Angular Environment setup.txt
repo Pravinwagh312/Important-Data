@@ -45,4 +45,20 @@ EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
 
+===================================================================
+
+Below is step to install node-v18.12.1
+curl -o node-v18.12.1-linux-x64.tar.xz https://nodejs.org/dist/v-18.12.1/node-v18.12.1-linux-x64.tar.xz
+tar -xvf node-v18.12.1-linux-x64.tar.xz
+sudo mv node-v18.12.1-linux-x64 /usr/local/
+sudo ln -s /usr/local/node-v18.12.1-linux-x64/bin/npm /usr/local/bin/npm
+node -v
+
+nano ~/.bashrc
+export PATH="/usr/local/node-v18.12.1-linux-x64/bin:$PATH"
+
+
+
+
+
 
