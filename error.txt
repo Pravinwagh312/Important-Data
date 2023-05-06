@@ -1,0 +1,4 @@
+[2023-05-06 13:45:22,059] ERROR Error when sending message to topic my-topic with key: null, value: 2 bytes with error: (org.apache.kafka.clients.producer.internals.ErrorLoggingCallback)
+org.apache.kafka.common.errors.TimeoutException: Expiring 2 record(s) for my-topic-0:120001 ms has passed since batch creation
+[2023-05-06 13:45:22,064] ERROR Error when sending message to topic my-topic with key: null, value: 4 bytes with error: (org.apache.kafka.clients.producer.internals.ErrorLoggingCallback)
+org.apache.kafka.common.errors.TimeoutException: Expiring 2 record(s) for my-topic-0:120001 ms has passed since batch creation
