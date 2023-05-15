@@ -1,0 +1,69 @@
+from kafka import KafkaConsumer
+import psycopg2
+import json
+
+bootstrap_servers = '10.52.0.245:9092'
+topic = 'my_topic1'
+
+# PostgreSQL connection details
+postgres_host = '172.20.0.2'
+postgres_port = 5432  # default PostgreSQL port
+postgres_db = 'mydatabase'
+postgres_user = 'myuser'
+postgres_password = 'mypassword'
+
+# Create a Kafka consumer instance
+consumer = KafkaConsumer(
+    topic,
+    bootstrap_servers=bootstrap_servers,
+    value_deserializer=lambda x: x.decode('utf-8'),
+    auto_offset_reset='earliest',
+    enable_auto_commit=False
+)
+
+# Connect to the PostgreSQL container
+conn = psycopg2.connect(
+    host=postgres_host,
+    port=postgres_port,
+    dbname=postgres_db,
+    user=postgres_user,
+    password=postgres_password
+)
+
+# Create a cursor object
+cur = conn.cursor()
+
+# Replace this with your INSERT query to insert data into the appropriate table
+insert_query = "INSERT INTO your_table (status, workflow_id, login, head_branch, updated_at, run_started_at, workflow_name, repo_name, created_at, conclusion) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+
+# Iterate through the messages in the consumer and insert them into the PostgreSQL table
+for message in consumer:
+    print(f'Topic: {message.topic}, Partition: {message.partition}, Offset: {message.offset}, Key: {message.key}, Value: {message.value}')
+    
+    # Parse the JSON string into a dictionary
+    message_dict = json.loads(message.value)
+
+    # Prepare the data to be inserted into the table
+    # Modify this based on the structure of your table and the data in the message_dict
+    data = (
+        message_dict['status'],
+        message_dict['workflow_id'],
+        message_dict['login'],
+        message_dict['head_branch'],
+        message_dict['updated_at'],
+        message_dict['run_started_at'],
+        message_dict['workflow_name'],
+        message_dict['Repo_name'],
+        message_dict['created_at'],
+        message_dict['conclusion']
+    )
+
+    # Execute the insert query
+    cur.execute(insert_query, data)
+
+    # Commit the transaction
+    conn.commit()
+
+# Close the cursor and connection
+cur.close()
+conn.close()
