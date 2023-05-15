@@ -11,3 +11,5 @@ CREATE TABLE my_table (
     created_at TIMESTAMP,
     conclusion TEXT
 );
+-----------------------
+psql -U your_username -d your_database -c "CREATE TABLE my_table (status TEXT, workflow_id INTEGER, login TEXT, head_branch TEXT, updated_at TIMESTAMP, run_started_at TIMESTAMP, workflow_name TEXT, repo_name TEXT, created_at TIMESTAMP, conclusion TEXT);"
