@@ -1,0 +1,8 @@
+#How to login postgresql running container
+sudo docker exec -it kafka2-postgresql1-1 /bin/bash
+
+#How to connect with your database
+psql -U myuser -d mydatabase
+
+#Check if any table present within database or not
+mydatabase=# \dt
