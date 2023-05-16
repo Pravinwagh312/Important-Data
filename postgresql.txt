@@ -10,3 +10,6 @@ mydatabase=# \dt
 #How to exit from database
 mydatabase=# \dt
 
+#How to check all table data in database
+mydatabase=#SELECT * FROM my_table;
+
