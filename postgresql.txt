@@ -13,3 +13,6 @@ mydatabase=# \dt
 #How to check all table data in database
 mydatabase=#SELECT * FROM my_table;
 
+
+#How to check particular table data using WHERE
+SELECT * FROM my_table WHERE workflow_id =134;
