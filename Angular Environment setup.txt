@@ -113,7 +113,13 @@ erbose cli /usr/local/node-v18.16.0-linux-x64/bin/node /usr/local/node-v18.16.0-
 45 verbose stack     at getAgent (/usr/local/node-v18.16.0-linux-x64/lib/node_modules/npm/node_modules/make-fetch-happen/lib/agent.js:21:17)
 45 verbose stack     at remoteFetch (/usr/local/node-v18.16.0-linux-x64/lib/node_modules/npm/node_modules/make-fetch-happen/lib/remote.js:31:17)
 
-
+------------
+npm cache clean --force
+npm config set registry https://registry.npmjs.org/
+npm config delete http-proxy
+npm config delete https-proxy
+npm config delete proxy
+npm install -g @angular/cli
 
 
 
