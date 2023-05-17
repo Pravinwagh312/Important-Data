@@ -1,0 +1,51 @@
+To install Angular CLI from the downloaded angular-cli-12.2.18.tar.gz file and move the Angular app to the /usr/local/ directory, you can follow these step-by-step instructions:
+
+Extract the downloaded file: Open a terminal or command prompt and navigate to the directory where the angular-cli-12.2.18.tar.gz file is located. Use the following command to extract the contents of the file:
+
+shell
+Copy code
+#tar -xvf angular-cli-12.2.18.tar.gz
+This command will extract the contents of the tarball into a directory named angular-cli-12.2.18.
+
+Move the Angular CLI directory: Next, use the sudo mv command to move the angular-cli-12.2.18 directory to the /usr/local/ directory. The command would look like this:
+
+shell
+Copy code
+#sudo mv angular-cli-12.2.18 /usr/local/
+This command will move the angular-cli-12.2.18 directory to /usr/local/.
+
+Install Angular CLI globally: To make Angular CLI globally accessible, you need to configure the PATH environment variable. Open the .bashrc file in a text editor using the following command:
+
+shell
+Copy code
+#nano ~/.bashrc
+Add the following line at the end of the file:
+
+shell
+Copy code
+#export PATH="/usr/local/angular-cli-12.2.18/bin:$PATH"
+Save the file and exit the text editor.
+
+Run the following command to apply the changes:
+
+shell
+Copy code
+#source ~/.bashrc
+Move the Angular app to /usr/local/: Assuming you have an existing Angular app directory, you can use the sudo mv command to move the app directory to /usr/local/. For example, if your app directory is named my-app, the command would look like this:
+
+shell
+Copy code
+sudo mv my-app /usr/local/
+This command will move the my-app directory to /usr/local/.
+
+Optional: Adjust file permissions: Depending on your system's configuration, you may need to adjust the file permissions of the moved Angular CLI directory and the Angular app directory. Use the chmod command to modify the permissions as needed. For example:
+
+shell
+Copy code
+sudo chmod -R 755 /usr/local/angular-cli-12.2.18
+sudo chmod -R 755 /usr/local/my-app
+These commands will recursively set the appropriate permissions for the directories.
+
+That's it! You have successfully installed Angular CLI from the downloaded tarball, moved the Angular CLI directory to /usr/local/, and moved your Angular app directory to /usr/local/. The Angular CLI will be globally accessible, and you can work with your Angular app in the /usr/local/my-app directory.
+
+Please note that using sudo requires administrative privileges, so make sure to provide your system password when prompted. Also, adjust the steps and commands as needed based on your specific file names and directory locations.
