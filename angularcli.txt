@@ -49,3 +49,33 @@ These commands will recursively set the appropriate permissions for the director
 That's it! You have successfully installed Angular CLI from the downloaded tarball, moved the Angular CLI directory to /usr/local/, and moved your Angular app directory to /usr/local/. The Angular CLI will be globally accessible, and you can work with your Angular app in the /usr/local/my-app directory.
 
 Please note that using sudo requires administrative privileges, so make sure to provide your system password when prompted. Also, adjust the steps and commands as needed based on your specific file names and directory locations.
+
+
+--------------------------------
+node:internal/modules/cjs/loader:1078
+  throw err;
+  ^
+
+Error: Cannot find module 'debug'
+Require stack:
+- /usr/local/angular-cli-12.2.18/lib/bootstrap-local.js
+- /usr/local/angular-cli-12.2.18/bin/ng
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (/usr/local/angular-cli-12.2.18/lib/bootstrap-local.js:11:15)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/usr/local/angular-cli-12.2.18/lib/bootstrap-local.js',
+    '/usr/local/angular-cli-12.2.18/bin/ng'
+  ]
+}
+
+Node.js v18.16.0
+
