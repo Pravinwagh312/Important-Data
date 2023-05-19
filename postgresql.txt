@@ -16,3 +16,7 @@ mydatabase=#SELECT * FROM my_table;
 
 #How to check particular table data using WHERE
 SELECT * FROM my_table WHERE workflow_id =134;
+
+
+----------------------------------------------------
+/home/---/Downloads/db_backup
