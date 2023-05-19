@@ -20,3 +20,4 @@ SELECT * FROM my_table WHERE workflow_id =134;
 
 ----------------------------------------------------
 /home/---/Downloads/db_backup
+docker cp /home/---/Downloads/db_backup my-postgres2:/db_backup
