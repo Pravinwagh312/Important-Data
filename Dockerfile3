@@ -1,0 +1,16 @@
+# Build stage
+FROM node:18.12.1-alpine as build
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+RUN npm run build --omit=dev
+
+# Show the contents of the build directory for debugging purposes
+RUN ls /app/dist/webapp
+
+# Runtime stage
+FROM httpd:2.4-alpine
+COPY --from=build /app/dist/webapp /usr/local/apache2/htdocs/
+
+EXPOSE 80
