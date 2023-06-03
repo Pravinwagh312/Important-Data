@@ -1,0 +1,82 @@
+Objective:
+
+AWS Certified Solution Architect with over [Your Experience] years of experience in designing, implementing, and managing cloud environments on AWS. 
+Proven track record of providing effective solutions to complex business problems through strategic decision-making and technical skills. 
+Seeking to leverage my technical and professional expertise to grow in the role of an AWS Solution Architect at [Company's Name].
+
+Skills:
+
+Extensive experience in architecting, designing, and implementing cloud solutions on AWS.
+Strong understanding of cloud computing technologies, business drivers, and emerging computing trends.
+Proficient with AWS services including EC2, S3, RDS, DynamoDB, CloudFormation, etc.
+Skilled in using automation tools such as Jenkins, Ansible, and Terraform.
+Experience with network protocols and cloud-based delivery models.
+
+Work Experience:
+
+AWS Solutions Architect | [Your Previous Company] | [City, State] | [Dates]
+
+Designed and deployed dynamically scalable and reliable applications on AWS.
+Implemented cost-control strategies that maximized return on investment (ROI).
+Migrated complex, multi-tier applications from an on-premise environment to AWS.
+Designed and maintained AWS CloudFormation templates for resource deployment.
+Conducted software solution delivery using Agile methodology.
+
+Cloud Engineer | [Your Previous Company] | [City, State] | [Dates]
+
+Developed, configured, and managed cloud-based systems ensuring scalability, security, and reliability.
+Implemented and automated security controls, governance processes, and compliance validation.
+Worked with development teams to help architect, design, and implement scalable software services.
+
+AWS Administration:
+
+AWS Administration: Demonstrated expertise in managing and operating AWS environments, including managing user access, creating and maintaining security groups, and handling AWS resource lifecycles.
+Infrastructure Management: Proficient in managing and supporting infrastructure on AWS services such as EC2, S3, Elastic Load Balancer, RDS, DynamoDB, Route53, CloudFront, and others.
+Security and Compliance: Knowledge of AWS security services such as IAM, KMS, CloudTrail, and Security Groups, as well as understanding of compliance issues related to the cloud (such as GDPR and HIPAA).
+Cost Optimization: Ability to optimize AWS costs through effective resource utilization, use of Reserved and Spot instances, and application of cost management tools.
+Network Configuration: Experienced in configuring VPC, Subnets, Security Groups, and Route Tables, and setting up AWS Direct Connect for on-premises to AWS connectivity.
+Automation and Orchestration: Skillful in using AWS services and tools for automation such as AWS CloudFormation and OpsWorks, as well as third-party tools like Terraform.
+Monitoring and Troubleshooting: Competency in using AWS CloudWatch, CloudTrail, and AWS Config for monitoring AWS environments and troubleshooting common problems.
+Data Management: Familiarity with AWS database and data storage services including RDS, DynamoDB, Redshift, and S3, including managing data backup and recovery.
+DevOps: Understanding of CI/CD pipelines, as well as experience with AWS DevOps tools such as AWS CodePipeline, CodeBuild, CodeDeploy, and CodeStar.
+Migration: Experience in migrating on-premise infrastructure to AWS using tools such as AWS Migration Hub, AWS Application Discovery Service, and AWS Server Migration Service.
+
+Project Experience:
+
+Project 1: Multi-tier Cloud Application Deployment
+
+Worked with a team to design and implement a scalable, highly available application deployment on AWS for a Fortune 500 company.
+Utilized services such as EC2, S3, RDS, Elastic Load Balancer, Auto Scaling, and Route 53.
+The solution reduced the company's infrastructure cost by 30% and increased application availability by 20%.
+
+Project 2: Migration of Legacy Systems to AWS
+
+Led a project to migrate on-premise legacy systems of a financial institution to AWS.
+The migration was executed with zero downtime and involved services like AWS Database Migration Service, EC2, RDS, and S3.
+The project improved system reliability and cut down operational costs by 25%.
+
+
+Project 3: Implementation of a Data Lake on AWS
+
+Designed and implemented a secure and compliant data lake for a healthcare provider using AWS services such as S3, Glue, Athena, and Redshift.
+The project streamlined the data analytics process, improved the data availability, and ensured compliance with healthcare regulations.
+
+
+Project 4: Development and Deployment of a Serverless Application
+
+Developed a serverless application for an e-commerce company using Lambda, API Gateway, DynamoDB, and S3.
+The application was able to handle large, unpredictable traffic while keeping costs at a minimum due to the pay-as-you-go model of serverless computing.
+
+
+Project 5: Cost Optimization and Governance Implementation
+
+Worked on cost optimization for a media company with large AWS deployment. Utilized AWS Cost Explorer and third-party tools for cost monitoring and optimization.
+Implemented governance and compliance with the help of AWS Config, AWS IAM, and AWS Security Hub.
+This initiative resulted in a 15% reduction in monthly AWS expenditure and ensured compliance with industry standards.
+
+Certifications:
+
+AWS Certified Solutions Architect - Professional
+AWS Certified DevOps Engineer - Professional
+AWS Certified Developer - Associate
+
