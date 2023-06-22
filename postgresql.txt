@@ -23,3 +23,9 @@ SELECT * FROM my_table WHERE workflow_id =134;
 docker cp /home/---/Downloads/db_backup my-postgres2:/db_backup
 
 https://gitlab.kpit.com/cicd-framework-and-kpi/cicd-framework/dashboard.git
+----------------------------------------
+                                                           version
+-----------------------------------------------------------------------------------------------------------------------------
+ PostgreSQL 15.2 (Debian 15.2-1.pgdg110+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 10.2.1-6) 10.2.1 20210110, 64-bit
+(1 row)
+
