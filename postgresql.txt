@@ -22,6 +22,22 @@ SELECT * FROM my_table WHERE workflow_id =134;
 /home/---/Downloads/db_backup
 docker cp /home/---/Downloads/db_backup my-postgres2:/db_backup
 
+37  psql -U myuser -d postgres -f /db_backup1
+   38  pg_restore -U myuser -d postgres -1 /db_backup1
+   39  pg_restore -U myuser -d postgres /db_backup1
+   40  createdb -u myuser -T template0 kpitdb
+   41  createdb -U myuser -T template0 kpitdb
+   42  pg_restore -u myuser -d kpitdb -1 /db_backup1
+   43  pg_restore -U myuser -d kpitdb -1 /db_backup1
+   44  pg_restore -U postgres -d kpitdb -1 /db_backup1
+   45  psql -u postgres
+   46  createdb -U postgres -T template0 kpitdb1
+   47  pg_restore -U postgres -d kpitdb -1 /db_backup1
+   48  psql -U postgres -d kpitdb
+   49  psql -U myuser -d kpitdb
+  
+
+
 https://gitlab.kpit.com/cicd-framework-and-kpi/cicd-framework/dashboard.git
 ----------------------------------------
                                                            version
