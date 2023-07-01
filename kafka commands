@@ -27,6 +27,16 @@ root@1d082587822e:/opt/kafka/bin# ./kafka-topics.sh --list -bootstrap-server 172
 ./kafka-console-consumer.sh --bootstrap-server 172.21.0.4:9092 --topic my-topic --from-beginning
 
 
+--------------------------
+delete topic
+--------------------------
+./kafka-topics.sh --bootstrap-server localhost:9092 --delete --topic my_topic
+To enable topic deletion, you have to set the delete.topic.enable property to true in the Kafka server settings (server.properties file).
+delete.topic.enable=true
+--
+For example, if you installed Kafka in /usr/local/kafka, the server.properties file would be located at /usr/local/kafka/config/server.properties
+
+
 
 
 
