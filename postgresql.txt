@@ -35,6 +35,17 @@ docker cp /home/---/Downloads/db_backup my-postgres2:/db_backup
    47  pg_restore -U postgres -d kpitdb -1 /db_backup1
    48  psql -U postgres -d kpitdb
    49  psql -U myuser -d kpitdb
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+## how to list databases ##
+1)Connect to the PostgreSQL database
+psql -U postgres
+2)List all databases:
+\l
+or
+\list
+-----------------------------------------------------------------------------------------------------------
   
 
 
